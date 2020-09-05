@@ -7,3 +7,5 @@ main.exe
 komenda-makespec.txt
 credentials.json
 token.pickle
+weather_key.py
+__pycache__

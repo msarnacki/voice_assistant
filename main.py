@@ -14,6 +14,7 @@ import winsound
 import pyttsx3
 import pyttsx3.drivers
 import pytz
+import weather_key
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/calendar']
@@ -206,8 +207,7 @@ def get_date(text):
 
     return datetime.date(year = year, month = month, day = day)
 
-def get_actual_weather(city):
-    weather_key = '7a5b0d6181b356c75fe289d7ef79ce68'
+def get_actual_weather(city, weather_key):
     url = 'https://api.openweathermap.org/data/2.5/weather'
     params = {'APPID': weather_key, 'q': city, 'units': 'metric', 'lang': 'pl'}
     response = requests.get(url,params = params)
@@ -233,7 +233,7 @@ def powiedz_pogode():
             break
 
         try:
-            get_actual_weather(text)
+            get_actual_weather(text, weather_key)
             udane = True        
         except Exception:
             speak("Nie udało się znaleźć takiego miasta. Podaj jeszcze raz.")
