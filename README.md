@@ -1,5 +1,15 @@
 # Voice Assistant (PL)
 
+<p align="left">
+    <img src="https://img.shields.io/github/stars/msarnacki/voice_assistant"/>
+    <img src="https://img.shields.io/github/watchers/msarnacki/voice_assistant"/>
+    <img src="https://img.shields.io/github/commit-activity/t/msarnacki/voice_assistant"/>
+    <img src="https://img.shields.io/github/last-commit/msarnacki/voice_assistant"/>
+    <img src="https://img.shields.io/github/issues/msarnacki/voice_assistant"/>
+    <img src="https://img.shields.io/github/languages/top/msarnacki/voice_assistant"/>
+    <img src="https://img.shields.io/github/repo-size/msarnacki/voice_assistant"/>
+</p>
+
 I made this program back in September 2019. Assistant is **based on keywords** (in fact on parts of keywords) and **speech recognition**. 
 The language it is listening to is **Polish**, so it doesn't work well with English but it is easly changable by changing language argument in recognize_google function to "en-US".
 
